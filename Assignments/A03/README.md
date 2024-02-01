@@ -11,11 +11,11 @@ python, apache and other necessary software on the server.
 Finally, we loaded up an API using python's fastapi that can be accessed using our servers Ip address.
 
 The following image shows the authorized keys that were added.
-<img src="https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A03/images/a03-keys.png" width="200">
+<img src="https://github.com/EthanJBailey/4443-MobileApps/blob/main/Assignments/A03/images/a03-keys.png" width="200">
 
 The following image shows the UFW firewall activated.
-<img src="https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A03/images/a03-ufw.png" width="200">
+<img src="https://raw.githubusercontent.com/EthanJBailey/4443-MobileApps/main/Assignments/A03/images/a03-ufw.png" width="200">
 
 The following image shows my API up and running with the ufw firewall activated.
-<img src="https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A03/images/a03-api.png" width="200">
+<img src="https://github.com/EthanJBailey/4443-MobileApps/blob/main/Assignments/A03/images/a03-api.png" width="200">
 
