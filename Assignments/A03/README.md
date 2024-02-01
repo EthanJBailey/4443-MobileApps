@@ -16,7 +16,7 @@ The following image shows the authorized keys that were added.
 
 The following image shows the UFW firewall activated.
 
-<img src="https://raw.githubusercontent.com/EthanJBailey/4443-MobileApps/main/Assignments/A03/images/a03-ufw.png" width="800">
+<img src="https://github.com/EthanJBailey/4443-MobileApps/blob/main/Assignments/A03/images/a03-ufw.png" width="800">
 
 The following image shows my API up and running on the cloud server ip address with the ufw firewall activated.
 
