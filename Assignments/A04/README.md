@@ -1,14 +1,24 @@
-## Assignment 4 - Mongo DB
+## Assignment 4 - Mongo DB Configuration
 ### Ethan Bailey
 ### Description:
 
-This assignment was create your own server and configure Mongo DB
+In this assignment, I undertook the task of setting up a server and configuring MongoDB. The process involved several steps:
 
-The following image shows the authorized keys that were added.
+Populating MongoDB:
 
-<img src="" width="800">
+I uploaded relevant files to my own server to populate the MongoDB database.
+Options for uploading included drag and drop, Git clone, or using rsync.
+After uploading, I ran the loadMongo.py script to create the "candy_store" database and the "candies" collection, ensuring that the database was ready to store candy-related information.
+Creating New Routes:
 
-The following image shows my API up and running on the cloud server ip address with the ufw firewall activated.
+With MongoDB set up, I edited the routes in the api.py file to tailor them specifically to the candy database.
+I implemented various query routes to perform tasks such as retrieving all candies, fetching candies in a specific category, searching for candies by keyword in the description or name, retrieving candies by price range, and more.
+Registering API:
 
-<img src="" width="800">
-
+To ensure continuous availability, I followed provided instructions to register the API with the server.
+This registration process helped in keeping the API up and running consistently, ensuring users could access the candy-related information at any time.
+Requirements:
+Create a folder named "A04" in the Assignments folder and on the server under the root folder.
+Place MongoDB classes and API code in the "A04" folder.
+Ensure that the API is accessible at http://your.ip.address:8080.
+All specified routes should be functional, allowing users to interact with the candy database seamlessly.
