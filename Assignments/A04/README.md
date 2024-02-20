@@ -21,7 +21,5 @@ To ensure continuous availability, I followed provided instructions to register 
 This registration process helped in keeping the API up and running consistently, ensuring users could access the candy-related information at any time.
 
 #### Requirements:
-Create a folder named "A04" in the Assignments folder and on the server under the root folder.
-Place MongoDB classes and API code in the "A04" folder.
-My API is accessible at http://142.93.185.100:8084/docs#/.
-All specified routes should be functional, allowing users to interact with the candy database seamlessly.
+- My API is accessible at http://142.93.185.100:8084/docs#/.
+- All specified routes should be functional, allowing users to interact with the candy database seamlessly.
