@@ -20,5 +20,5 @@ This registration process helped in keeping the API up and running consistently,
 Requirements:
 Create a folder named "A04" in the Assignments folder and on the server under the root folder.
 Place MongoDB classes and API code in the "A04" folder.
-Ensure that the API is accessible at http://your.ip.address:8080.
+My API is accessible at http://142.93.185.100:8084/docs#/.
 All specified routes should be functional, allowing users to interact with the candy database seamlessly.
