@@ -7,7 +7,7 @@ import uvicorn
 import json
 from pymongo import MongoClient
 from typing import List
-from pydantic import BaseModel
+#from pydantic import BaseModel
 from bson import ObjectId
 from mongoManager import MongoManager
 
@@ -167,7 +167,7 @@ def candies_by_category(category: str):
 
 # Get candies with a keyword in the description.
 @app.get("/candies/{keyword}")
-def get_candy_by_key_in_Desc(keyword: str):
+def get_candy_by_key_in_Description(keyword: str):
     """
     Get candies with a key word in the description.
     """
@@ -225,13 +225,13 @@ def get_candy_by_price_range(upper_price: float, lower_price: float):
 
     
 # Get candy with with a specified ID.
-@app.get("/candies/id/{id}")
+@app.get("/candies/id/")
 def get_candy_by_id(id: str):
     """
     Retrieve a candy by its unique ID.
 
     Parameters:
-    - `candy_id`: str - The unique identifier for the candy.
+    - `id`: str - The unique identifier for the candy.
     
     Returns:
     - The candy document with the specified ID.
@@ -243,35 +243,25 @@ def get_candy_by_id(id: str):
     return result
 
 # Get a candy image.
-@app.get("/candies/image")
-def get_candy_image(candy_id: str):
-    """
-    Get the image URL for a specific candy given an ID.
-    """
-    image_url = f"http://142.93.185.100:8084/{candy_id}.jpg"
-    print(image_url)
-    return {}
+# @app.get("/candies/image/")
+# def get_candy_image(id: str):
+#     """
+#     Get the image URL for a specific candy given an ID.
+#     """
+#     data = mm.get_candy_image(id)
+#     image_path = f"images/{categories}/{id}.jpg"  # Update this path to your image's path
+#     return FileResponse(image_path)
 
-# Update a candies price.
-@app.put("/candies/price")
-def update_candy_price(id: str, new_price: float):
+# Update a candies based on a given key.
+@app.put("/candies/update")
+def update_candy_info(id: str, key: str, val: str):
     """
-    Update the price of a specific candy.
+    Update the details of a specific based on a given key.
     """
-    result = mm.put2("_id", id, "price", new_price)
-    if result["success"]:
-        return {"message": "Price updated successfully"}
-   
-
-# Update a candies description
-@app.put("/candies/desc")
-def update_candy_description(id: str, new_description: str):
-    """
-    Update the description of a specific candy.
-    """
-    result = mm.put2("_id", id, "desc", new_description)
-    if result["success"]:
-        return {"message": "Description updated successfully"}
+    mm.setCollection("candies")
+    print(id,key,val)
+    mm.put({"id": id}, {key: val})
+    return {"message": "Candy updated successfully"}
    
 # Delete a candy.
 @app.delete("/candies/")
@@ -282,8 +272,7 @@ def delete_candy(candy_id: str):
     client = MongoClient()
     db = client['candy_store']
     collection = db['candies']
-    result = collection.delete_one({"_id": ObjectId(candy_id)})
-    
+    result = collection.delete_one({"id": candy_id})
     return {"message": "Candy deleted successfully"}
 
 """

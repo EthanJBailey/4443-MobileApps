@@ -196,8 +196,12 @@ class MongoManager:
         :param upsert: If True, a new document is inserted if no document matches the filter_query.
         :return: Result of the update operation.
         """
-        if not self.collection:
+        #if not self.collection:
+        #    raise ValueError("Collection not set.")
+        
+        if self.collection == None:
             raise ValueError("Collection not set.")
+          
 
         # MongoDB requires update operations to be prefixed with operators like '$set', '$unset', etc.
         # Ensure update_data is structured properly or wrap it with '$set' if it's a direct field update.
