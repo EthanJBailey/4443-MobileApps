@@ -1,4 +1,4 @@
-## Assignment 4 - Mongo DB Configuration
+## Assignment 4 - Mongo DB + FastApi
 ### Ethan Bailey
 ### Description:
 
