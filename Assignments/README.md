@@ -6,3 +6,4 @@
 |   2   | [A02](https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A02) | [Code Repository](https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A02/README.md) |
 |   3   | [A03](https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A03) | [Create your own server](https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A03/README.md) |
 |   4   | [A04](https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A04) | [MongoDB Configuration](https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A04/README.md) |
+|   5   | [A05](https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A05) | [React + FastAPI + MongoDB](https://github.com/EthanJBailey/4443-MobileApps/tree/main/Assignments/A05/README.md) |
