@@ -30,17 +30,3 @@ The Candy Store app offers the following features:
 
 - **Candy Management:** Admin users have access to additional features for managing candies, such as adding new candies, updating prices, and deleting candies from the inventory.
 
-## Setup Instructions
-
-To set up the Candy Store app locally, follow these steps:
-
-1. Clone the repository to your local machine.
-
-2. Navigate to the project directory.
-
-3. Install dependencies using npm or yarn:
-
-   ```bash
-   npm install
-   # or
-   yarn install
