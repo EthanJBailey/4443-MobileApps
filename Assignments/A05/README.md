@@ -25,8 +25,3 @@ The Candy Store app offers the following features:
 - **User Authentication:** Users can register for an account and log in securely using their email address and password.
 
 - **Candy Search:** Users can search for candies using different search criteria and view detailed information about each candy.
-
-- **Profile Management:** Registered users can manage their profiles, update their personal information, and change their passwords.
-
-- **Candy Management:** Admin users have access to additional features for managing candies, such as adding new candies, updating prices, and deleting candies from the inventory.
-
