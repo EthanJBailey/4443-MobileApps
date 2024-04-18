@@ -5,6 +5,10 @@ import LandingPage from './src/screens/LandingPage';
 import LoginPage from './src/screens/LoginPage';
 import RegistrationPage from './src/screens/RegistrationPage';
 import HomePage from './src/screens/HomePage';
+import CoffeeSearch from './src/screens/CoffeeSearch';
+//import LocationPage from './src/screens/LocationPage';
+
+
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -14,9 +18,10 @@ function App() {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName="LandingPage"
+        component={LandingPage}
         screenOptions={{
-          "tabBarActiveTintColor": "#eb6e3d",
-          "tabBarInactiveTintColor": "gray",
+          "tabBarActiveTintColor": "blue",
+          "tabBarInactiveTintColor": "black",
           "tabBarStyle": [
             {
               "display": "flex"
@@ -35,6 +40,26 @@ function App() {
             ),
           }}
         />
+        <Tab.Screen
+          name="Search"
+          component={CoffeeSearch}
+          options={{
+            tabBarLabel: 'Search',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons name="feature-search-outline" color={color} size={size} />
+            ),
+          }}
+        />
+        {/* <Tab.Screen
+          name="Location"
+          component={LocationPage}
+          options={{
+            tabBarLabel: 'Location',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons name="location" color={color} size={size} />
+            ),
+          }}
+        /> */}
         <Tab.Screen
           name="Login"
           component={LoginPage}
