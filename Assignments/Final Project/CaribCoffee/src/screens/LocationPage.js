@@ -29,7 +29,7 @@ const LocationScreen = () => {
         setUserLocations(responseUserLocations.data);
 
         const responseCoffeeShops = await axios.get(
-          `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${currentLocation.coords.latitude},${currentLocation.coords.longitude}&radius=8045&keyword=coffee&key=AIzaSyC3bq5W_D0BV-LHsfP6HrnKYi06TeyorWg`
+          `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${currentLocation.coords.latitude},${currentLocation.coords.longitude}&radius=8045&keyword=coffee&key=(API_KEY)`
         );
         setCoffeeShops(responseCoffeeShops.data.results);
       } catch (error) {
