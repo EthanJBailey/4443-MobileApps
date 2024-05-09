@@ -3,7 +3,7 @@
 
 This repository contains the code for a CaribCoffee application. The application allows users to explore coffee spots, engage in discussions, read blogs, and manage their account. 
 
-[Download the final presentation video](https://github.com/EthanJBailey/4443-MobileApps/blob/main/Assignments/Final%20Project/Final%20video%20presentation.webm) for the CaribCoffee Application:
+[Download the final presentation video](https://github.com/EthanJBailey/4443-MobileApps/blob/main/Assignments/Final%20Project/Final%20video%20presentation.webm) for the CaribCoffee Application.
 
 <video width="320" height="240" controls>
   <source src="https://github.com/EthanJBailey/4443-MobileApps/blob/main/Assignments/Final%20Project/Final%20video%20presentation.webm" type="video/webm">
