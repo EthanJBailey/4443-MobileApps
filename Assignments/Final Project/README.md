@@ -1,7 +1,14 @@
 ## Final Project - CaribCoffee Mobile App (React Native + FastAPI + MongoDB)
 ### Description:
 
-This repository contains the code for a CaribCoffee application developed by [Your Name]. The application allows users to explore coffee spots, engage in discussions, read blogs, and manage their account.
+This repository contains the code for a CaribCoffee application. The application allows users to explore coffee spots, engage in discussions, read blogs, and manage their account. 
+
+View the final presentation video the [CaribCoffee Application](http://142.93.185.100:8084/) or below:
+
+<video width="320" height="240" controls>
+  <source src="https://github.com/EthanJBailey/4443-MobileApps/blob/main/Assignments/Final%20Project/Final%20video%20presentation.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 ## Basic Components
 
